@@ -1043,7 +1043,6 @@ Through this project, I learned several valuable lessons:
    - **Task dependencies**: In Snowflake, if a root task is executed successfully, but some child tasks fail, you cannot resume only the remaining tasks. Therefore, ensure your data pipeline is well-tested and error-free before resuming tasks.
 
 You can try [my dashboard](https://app.snowflake.com/wfetdje/nz30916/#/filter-by-team-analysis-dNLN4JZ9T:119f8624303e56fa58d186ccf4457d272397e8d72ef407eee9439783469f48ba)
-Thank you, Data Engineering Simplified for the help of this project! 🙂 🎉
-
+Thank you, Data Engineering Simplified for the video tutorial of this project! 🙂 🎉
 (If you need my sample data, you can contact me!) 
 
