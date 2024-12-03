@@ -1007,4 +1007,28 @@ Use SQL queries or your dashboard to verify if the data has been successfully in
 In my example, I added a new country 'Canada' that lost on a match with South Africa. 
 [image]
 
-### Note: you need to edit your filter by executing the query again so that the new data are also resulted. 
+### Note: If you have added new data (e.g., new teams, players, matches), make sure to re-execute your query to filter for the new data. This will ensure the updated dataset is included in your results!
+
+
+# Lessons I learned 
+Through this project, I learned several valuable lessons:
+
+1. **Working with Semi-Structured Data**:
+   - I gained hands-on experience with semi-structured data, particularly JSON, and how to process and manage it within Snowflake.
+
+2. **Using Snowflake (CLI and Snowsight)**:
+   - I learned how to work with Snowflake both through its CLI and the Snowsight interface. The CLI was particularly useful for automating tasks and executing queries, while Snowsight provided an intuitive interface for visualizing data and managing resources.
+
+3. **Creating a Data Pipeline**:
+   - I developed an understanding of how to create a complete data pipeline, including how to ingest, process, and transform data within Snowflake.
+   - I automated this pipeline to handle streaming data, ensuring that new data is captured and processed in real time.
+
+4. **Important Snowflake Considerations**:
+   - Always remember to add a semicolon (`;`) at the end of each SQL query. This is necessary to execute the query correctly.
+   - When creating a data pipeline in Snowflake, specify the **full path** (from the database to the table) instead of just the table name. If you don’t, Snowflake won’t be able to find the table.
+   - It’s useful to have some data that is **unused** in your system. This data can serve as a testing ground for your data pipeline. Without this, you might end up needing to create your own data (unless you have another tool to generate it).
+   - **Task dependencies**: In Snowflake, if a root task is executed successfully, but some child tasks fail, you cannot resume only the remaining tasks. Therefore, ensure your data pipeline is well-tested and error-free before resuming tasks.
+
+
+Thank you, Data Engineering Simplified for the help of this project! :)
+
