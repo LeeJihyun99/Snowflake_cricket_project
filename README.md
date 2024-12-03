@@ -3,7 +3,7 @@
 This project implements a data pipeline to process semi-structured JSON files containing cricket match data. The pipeline is designed using Snowflake, with automated data ingestion, transformation, and visualization via a customized dashboard. This project was initially developed by following a [video tutorial](https://www.youtube.com/watch?v=qDmqE89DSQQ&t=205s). I then customized and extended the project, particularly in the dashboard and automation sections.
 
 ### Note: 
-In the video tutorial I followed, a full dataset was provided to work with. However, for the purposes of this project, I only had access to a **sample set of data** from [this website](https://data-engineering-simplified.medium.com/end-to-end-data-engineering-project-using-snowflake-8f8e4f0fd1d0). The sample data contains a limited subset of the information necessary for the complete data pipeline, and as a result, some parts of the pipeline may not be fully demonstrated in the sample dataset.
+In the video tutorial I followed, a full dataset was provided to work with. However, for the purposes of this project, I only had access to a **sample set of data** from [this website](https://data-engineering-simplified.medium.com/end-to-end-data-engineering-project-using-snowflake-8f8e4f0fd1d0). The sample data contains a limited subset of the information necessary for the complete data pipeline, and as a result, some parts of the pipeline may not be fully demonstrated in the sample dataset. 
 
 ## Getting Started
 #### Snowflake Setup (Free Trial)
@@ -40,6 +40,9 @@ To exit, type:
 ## Architecture
 Below is the overall architecture of the project:
 ![My Image](https://github.com/LeeJihyun99/Snowflake_cricket_project/blob/main/data_flow_diagram.png)
+### Note: 
+In many real-world data engineering projects, the first step often involves collecting raw data from external sources (like cloud services, APIs, or web scraping), usually in formats like JSON, CSV, or Parquet. In this project, this first step of collecting and receiving raw data in JSON format has already been handled, and you are starting directly with that data.
+
 #### The pipeline consists of the following layers:
 - Landing Layer: Initial data ingestion and staging.
 - Raw Layer: Loading raw data into Snowflake tables.
