@@ -2,6 +2,10 @@
 ## Overview
 This project implements a data pipeline to process semi-structured JSON files containing cricket match data. The pipeline is designed using Snowflake, with automated data ingestion, transformation, and visualization via a customized dashboard. This project was initially developed by following a [video tutorial](https://www.youtube.com/watch?v=qDmqE89DSQQ&t=205s). I then customized and extended the project, particularly in the dashboard and automation sections.
 
+### Note: 
+In the video tutorial I followed, a full dataset was provided to work with. However, for the purposes of this project, I only had access to a **sample set of data** from [here](https://data-engineering-simplified.medium.com/end-to-end-data-engineering-project-using-s
+nowflake-8f8e4f0fd1d0
+). The sample data contains a limited subset of the information necessary for the complete data pipeline, and as a result, some parts of the pipeline may not be fully demonstrated in the sample dataset.
 
 ## Getting Started
 #### Snowflake Setup (Free Trial)
