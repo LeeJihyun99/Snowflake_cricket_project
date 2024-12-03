@@ -39,7 +39,7 @@ To exit, type:
 
 ## Architecture
 Below is the overall architecture of the project:
-![image]
+![My Image](https://github.com/LeeJihyun99/Snowflake_cricket_project/blob/main/data_flow_diagram.png)
 #### The pipeline consists of the following layers:
 - Landing Layer: Initial data ingestion and staging.
 - Raw Layer: Loading raw data into Snowflake tables.
@@ -273,7 +273,7 @@ The Consumption Layer is where the cleaned data are structured into fact and dim
 Fact and dimension tables are designed and architected based on the data and structure provided in the video tutorial. These tables are then used for further analysis and reporting.
 You can refer to the diagram to better understand the relationships between the tables.
 
-[Insert the schema diagram here (DBeaver-generated diagram)]
+![My Image](https://github.com/LeeJihyun99/Snowflake_cricket_project/blob/main/final-er-diagram-consumption.png)
 
 #### Fact and Dimension Tables Overview
 Using the DBeaver tool, I uploaded the fact and dimension tables, which automatically generated a diagram to illustrate the relationships between them. Here's a brief overview of the tables created:
@@ -1004,10 +1004,18 @@ After the tasks have been triggered, monitor their progress in the Task History 
 
 - Success: If the task has executed without any issues.
 - Failure: If the task has failed, you can view the logs for detailed error messages.
+You can see the whole flow of tasks run in the task history:
+![My Image](https://github.com/LeeJihyun99/Snowflake_cricket_project/blob/main/tasks%20run%20succesfully.png)
 
 Use SQL queries or your dashboard to verify if the data has been successfully inserted into the consumption layer.
 In my example, I added a new country 'Canada' that lost on a match with South Africa. 
-[image]
+This is the dashboard for the country South Africa before I added the new example data above:
+![My Image](https://github.com/LeeJihyun99/Snowflake_cricket_project/blob/main/south%20africa%20dashboard.png)
+And this is the dashboard for South Africa after the insertion:
+![My Image](https://github.com/LeeJihyun99/Snowflake_cricket_project/blob/main/south%20africa%20dashboard%20after%20insertion.png)
+And this is the dashbaord for Canada:
+![My Image](https://github.com/LeeJihyun99/Snowflake_cricket_project/blob/main/canada%20dashboard.png)
+As you can see, Canada is added into the filter drop-down list and the match information between South Africa and Canada has been successfully added. 
 
 ### Note: If you have added new data (e.g., new teams, players, matches), make sure to re-execute your query to filter for the new data. This will ensure the updated dataset is included in your results!
 
