@@ -1029,6 +1029,6 @@ Through this project, I learned several valuable lessons:
    - It’s useful to have some data that is **unused** in your system. This data can serve as a testing ground for your data pipeline. Without this, you might end up needing to create your own data (unless you have another tool to generate it).
    - **Task dependencies**: In Snowflake, if a root task is executed successfully, but some child tasks fail, you cannot resume only the remaining tasks. Therefore, ensure your data pipeline is well-tested and error-free before resuming tasks.
 
-
+You can try [my dashboard](https://app.snowflake.com/wfetdje/nz30916/#/filter-by-team-analysis-dNLN4JZ9T:119f8624303e56fa58d186ccf4457d272397e8d72ef407eee9439783469f48ba)
 Thank you, Data Engineering Simplified for the help of this project! :)
 
